@@ -1,0 +1,15 @@
+﻿@model SimpleMVC.Models.Person
+
+@{
+    //if (@ViewContext.ViewData.ModelState.IsValid) // provides a way to access model state inside the view
+    {
+        ViewBag.Title = "Person View";
+    }
+}
+<div>
+    <h2>@ViewBag.DemoTitle</h2>
+    @Html.LabelFor(m => m.Name) : @Html.DisplayFor(m => m.Name)
+    <br/>
+    @Html.LabelFor(m => m.Age)  : @Html.DisplayFor(m => m.Age)
+</div>
+

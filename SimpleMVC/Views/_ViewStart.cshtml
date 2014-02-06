@@ -1,0 +1,17 @@
+﻿@{
+    
+    var sController = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    var sLayout = "~/Views/_DemoLayoutPage.cshtml";
+
+    if (sController == "PatientBlog" || sController == "PatientInfo")
+    {
+        sLayout = "~/Views/Shared/_PatientLayout.cshtml"; // The controller does not exist, just added for demonstration purpose
+    }
+    else if (sController == "DoctorBlog")
+    {
+        sLayout = "~/Views/Shared/_DoctorLayout.cshtml"; //we could also put different _ViewStart.html file in each controller's view folder
+    }
+
+    Layout = sLayout;  // perhaps, we could also associate a layout on the fly by passing extra MasterPage parameter while creating the view
+}
+

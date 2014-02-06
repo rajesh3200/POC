@@ -1,0 +1,19 @@
+﻿@model ICollection<SimpleMVC.Models.Person>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>People View</title>
+</head>
+<body>
+    <div>
+        @Html.DropDownListFor(x=>x.First().Name,new SelectList(Model,"Name","Name"))
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@using SimpleMVC.Helpers
+
+@{
+    ViewBag.Title = "CustomView";
+    Layout = "~/Views/_DemoLayoutPage.cshtml";
+}
+
+<h2>CustomView</h2>
+
+@Html.Header("Demo Header!")
+
+@Html.Span("color:green","Demo Style Text!")
+
+<!-- Calling helper with HTML attributes 
+<%= Html.Image("img1", ResolveUrl("~/Content/XBox.jpg"), "XBox Console", new {border="4px"})%>-->
