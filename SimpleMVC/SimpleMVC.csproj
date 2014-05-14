@@ -121,6 +121,7 @@
     <Compile Include="Helpers\HeaderHelper.cs" />
     <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Helpers\StyleHelper.cs" />
+    <Compile Include="Models\FeaturedProductModel.cs" />
     <Compile Include="Models\PersonModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -164,6 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\CustomView.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_FeaturedProduct.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

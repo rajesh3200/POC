@@ -1,0 +1,17 @@
+﻿@model SimpleMVC.Models.FeaturedProduct
+
+<style type="text/css">
+    .featuredProduct {border: solid 1px #000}
+</style>
+<div>
+    <div>
+        <h2>
+            Our Featured product:<br />
+            @ViewBag.FeaturedProduct.Name
+        </h2>
+    </div>    <div>
+        <h3>
+            Now discounted to $@String.Format("{0:F}", ((decimal)ViewBag.FeaturedProduct.Price)-100)
+        </h3>
+    </div>  
+</div>
